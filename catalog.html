@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="wrapper">
@@ -31,7 +32,7 @@
         </div>
       </header>
       <main>
-        <div class="page-content">
+        <div class="page-content catalog">
           <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
           <section class="catalog-filter">
             <h2 class="visually-hidden">Фильтры выбора гостиниц</h2>
@@ -78,11 +79,15 @@
                 </fieldset>
                 <fieldset class="catalog-filter__form-group price">
                   <legend class="catalog-filter__form-caption">Стоимость, ₽:</legend>
-                  <div class="catalog-filter__price-input">
-                    <label><input type="number" name="min-price" value="0"></label>
+                  <div class="catalog-filter__price">
+                    <label>
+                      <input class="catalog-filter__price-input" type="number" name="min-price" value="0">
+                    </label>
                   </div>
-                  <div class="catalog-filter__price-input">
-                    <label><input type="number" name="max-price" value="9000"></label>
+                  <div class="catalog-filter__price">
+                    <label>
+                      <input class="catalog-filter__price-input" type="number" name="max-price" value="9000">
+                    </label>
                   </div>
                   <div class="range-slider"></div>
                 </fieldset>
@@ -95,7 +100,7 @@
             <h2 class="visually-hidden">Список гостиниц</h2>
             <div class="catalog__sort">
               <p class="catalog__sort-result">Найдено гостиниц: <span>38</span></p>
-              <select class="catalog__sort-select">
+              <select class="catalog__sort-select" aria-label="Сортировка">
                 <option value="popular">Сначала популярные</option>
                 <option value="cheap" selected>Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
@@ -116,7 +121,7 @@
                   <img src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
                   <h3 class="product-card__title">Amara Resort & Spa</h3>
                 </a>
-                <p>Гостиница<span>От 4000 ₽</span></p>
+                <p>Гостиница<span class="hotel-price">От 4000 ₽</span></p>
                 <button class="btn btn--brown product-card__btn" type="button">подробнее</button>
                 <button class="btn btn--blue product-card__btn" type="button">в избранное</button>
                 <div class="product-card__rating">
@@ -128,7 +133,7 @@
                   <img src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
                   <h3 class="product-card__title">Villas at Poco Diablo</h3>
                 </a>
-                <p>Гостиница<span>От 5000 ₽</span></p>
+                <p>Гостиница<span class="hotel-price">От 5000 ₽</span></p>
                 <button class="btn btn--brown product-card__btn" type="button">подробнее</button>
                 <button class="btn btn--green product-card__btn" type="button">в избранном</button>
                 <div class="product-card__rating">
@@ -140,7 +145,7 @@
                   <img src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
                   <h3 class="product-card__title">Desert Quail Inn</h3>
                 </a>
-                <p>Гостиница<span>От 2500 ₽</span></p>
+                <p>Гостиница<span class="hotel-price">От 2500 ₽</span></p>
                 <button class="btn btn--brown product-card__btn" type="button">подробнее</button>
                 <button class="btn btn--blue product-card__btn" type="button">в избранное</button>
                 <div class="product-card__rating">
@@ -152,7 +157,7 @@
                   <img src="images/hotels/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
                   <h3 class="product-card__title">GreenTree Inn</h3>
                 </a>
-                <p>Гостиница<span>От 1500 ₽</span></p>
+                <p>Гостиница<span class="hotel-price">От 1500 ₽</span></p>
                 <button class="btn btn--brown product-card__btn" type="button">подробнее</button>
                 <button class="btn btn--blue product-card__btn" type="button">в избранное</button>
                 <div class="product-card__rating">
