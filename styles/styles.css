@@ -589,7 +589,7 @@ body {
 .catalog__sort-select {
   width: 292px;
   min-height: 48px;
-  padding: 14px 20px;
+  padding: 12px 20px 11px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   font-size: inherit;
@@ -618,6 +618,8 @@ body {
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .product-card:nth-child(3n) {
@@ -690,7 +692,10 @@ body {
 }
 
 .catalog__pagination-link {
-  padding: 12px 24px;
+  box-sizing: border-box;
+  display: block;
+  min-width: 60px;
+  padding: 12px 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -702,7 +707,10 @@ body {
 }
 
 .pagination-dots {
-  padding: 16px 22px;
+  box-sizing: border-box;
+  min-width: 60px;
+  padding: 16px;
+  text-align: center;
 }
 
 .catalog__pagination-link.catalog__pagination-link--active {
