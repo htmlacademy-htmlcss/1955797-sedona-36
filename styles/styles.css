@@ -604,26 +604,19 @@ body {
 }
 
 .catalog__cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  margin-bottom: 80px;
 }
 
 .product-card {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   box-sizing: border-box;
-  width: 340px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-}
-
-.product-card:nth-child(3n) {
-  margin-right: 0;
 }
 
 .product-card__link {
@@ -632,6 +625,7 @@ body {
 }
 
 .product-card__img {
+  display: block;
   margin-bottom: 16px;
 }
 
