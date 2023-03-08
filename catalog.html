@@ -27,6 +27,7 @@
           </button>
           <a class="header__icon favorite-icon">
             <span class="visually-hidden">Избранное</span>
+            <span class="favorite-counter">12</span>
           </a>
           <button class="btn btn--brown header__btn" type="button">Хочу сюда!</button>
         </div>
@@ -50,7 +51,7 @@
             <form action="https://echo.htmlacademy.ru" method="get">
               <div class="form-wrapper">
                 <div class="left-column">
-                  <fieldset class="catalog-filter__form-group form-facilities">
+                  <fieldset class="catalog-filter__form-group">
                     <legend class="catalog-filter__form-caption">Инфраструктура:</legend>
                     <ul class="catalog-filter__form-list">
                       <li class="catalog-filter__form-item">
@@ -64,7 +65,7 @@
                       </li>
                     </ul>
                   </fieldset>
-                  <fieldset class="catalog-filter__form-group form-accomodation">
+                  <fieldset class="catalog-filter__form-group">
                     <legend class="catalog-filter__form-caption">Тип жилья:</legend>
                     <ul class="catalog-filter__form-list">
                       <li class="catalog-filter__form-item">
@@ -80,14 +81,16 @@
                   </fieldset>
                 </div>
                 <div class="right-column">
-                  <fieldset class="catalog-filter__form-group form-price">
+                  <fieldset class="catalog-filter__form-group form-group-price">
                     <legend class="catalog-filter__form-caption">Стоимость, ₽:</legend>
                     <div class="price-wrapper">
-                      <label>
-                        <input class="catalog-filter__price-input" type="number" name="min-price" value="0">
+                      <label class="catalog-filter__price-label">
+                        <input class="catalog-filter__price-input price-input-from" type="number" name="min-price" value="0">
+                        <span>от</span>
                       </label>
-                      <label>
-                        <input class="catalog-filter__price-input" type="number" name="max-price" value="9000">
+                      <label class="catalog-filter__price-label">
+                        <input class="catalog-filter__price-input price-input-to" type="number" name="max-price" value="9000">
+                        <span>до</span>
                       </label>
                     </div>
                     <div class="range-slider"></div>
@@ -112,7 +115,7 @@
                 <option value="expensive">Сначала дорогие</option>
               </select>
               <div class="sort-btn-wrapper">
-                <button class="catalog__sort-icon blocks-icon" type="button">
+                <button class="catalog__sort-icon catalog__sort-icon--active blocks-icon" type="button">
                   <span class="visually-hidden">Показать карточки</span>
                 </button>
                 <button class="catalog__sort-icon card-icon" type="button">
