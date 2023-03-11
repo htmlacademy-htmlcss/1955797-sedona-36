@@ -301,9 +301,10 @@ body {
 }
 
 .hero {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 50px;
   background-color: #82B3D3;
   background-image: url("../images/svg/divider.svg"), url("../images/landscape/index-background.jpg");
   background-size: 100% auto, 100% auto;
@@ -890,6 +891,54 @@ body {
 
 .range-slider {
   min-height: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.range-slider-scale {
+  width: 287px;
+  height: 4px;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.range-slider-bar {
+  position: absolute;
+  width: 227px;
+  height: 4px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.range-slider-handler {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.range-slider-handler:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-slider-handler:focus {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-slider-handler:active {
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.min-price-handler {
+  left: 0;
+}
+
+.max-price-handler {
+  left: 207px;
 }
 
 .catalog-filter__btn {
