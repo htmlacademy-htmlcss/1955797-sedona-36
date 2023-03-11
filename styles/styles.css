@@ -1122,7 +1122,23 @@ body {
 }
 
 .product-card__stars {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   min-height: 37px;
+}
+
+.rating-star {
+  min-width: 18px;
+  min-height: 17px;
+  margin-right: 6px;
+  background-image: url("../images/svg/star-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rating-star:last-child {
+  margin-right: 0;
 }
 
 .product-card__rating {
