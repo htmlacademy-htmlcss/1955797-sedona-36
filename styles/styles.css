@@ -813,11 +813,72 @@ body {
 
 .catalog-filter__form-item {
   margin-bottom: 16px;
-  line-height: 23px;
 }
 
 .catalog-filter__form-item:last-child {
   margin-bottom: 0;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.control-mark {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input:focus .control {
+  opacity: initial;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 4px;
+  width: 13px;
+  height: 11px;
+  background-image: url("../images/svg/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+}
+
+.control-label {
+  line-height: 23px;
 }
 
 .price-wrapper {
