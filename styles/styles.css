@@ -822,7 +822,7 @@ body {
 
 .price-wrapper {
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
 }
 
 .catalog-filter__price-label {
@@ -889,47 +889,41 @@ body {
   opacity: 0.3;
 }
 
-.range-slider {
-  min-height: 20px;
+.range-scale {
   position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.range-slider-scale {
   width: 287px;
   height: 4px;
-  background-color: #ffffff;
-  opacity: 0.3;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.range-slider-bar {
+.range-bar {
   position: absolute;
-  width: 227px;
   height: 4px;
-  left: 0;
   background-color: #ffffff;
 }
 
-.range-slider-handler {
+.range-handler {
   position: absolute;
   width: 20px;
   height: 20px;
+  top: -8px;
   border: none;
   border-radius: 5px;
   background-color: #ffffff;
   cursor: pointer;
 }
 
-.range-slider-handler:hover {
+.range-handler:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.range-slider-handler:focus {
+.range-handler:focus {
+  outline: 3px solid #83b3d3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.range-slider-handler:active {
+.range-handler:active {
+  outline: 2px solid #83b3d3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
