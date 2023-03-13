@@ -360,7 +360,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 84px;
+  padding: 103px 84px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
