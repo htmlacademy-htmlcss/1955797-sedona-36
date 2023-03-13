@@ -153,5 +153,74 @@
         </a>
       </footer>
     </div>
+    <div class="modal-container modal-closed">
+      <div class="modal modal-search">
+        <button class="modal__close-btn" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal__content">
+          <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+          <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal__form-date check-in">
+              <label class="date-label" for="check-in">Дата заезда:</label>
+              <div class="date-input-wrapper">
+                <input class="date-input" type="text" id="check-in" name="check-in" placeholder="Укажите дату" value="27 апреля 2020">
+                <span class="date-input-message error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            </div>
+            <div class="modal__form-date check-out">
+              <label class="date-label" for="check-out">Дата выезда:</label>
+              <div class="date-input-wrapper">
+                <input class="date-input" type="text" id="check-out" name="check-out" placeholder="Укажите дату" value="1 сентября 2023">
+                <span class="date-input-message">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+            </div>
+            <div class="modal__form-people adults">
+              <label class="people-label" for="adults">Взрослые:</label>
+              <button class="form-people__btn decrease-btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                  <path d="M3 9v2h14V9H3Z"/>
+                </svg>
+                <span class="visually-hidden">Уменьшить количество</span>
+              </button>
+              <input class="people-input" type="number" id="adults" name="adults" value="2">
+              <button class="form-people__btn increase-btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                  <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                </svg>
+                <span class="visually-hidden">Увеличить количество</span>
+              </button>
+            </div>
+            <div class="modal__form-people">
+              <span class="people-label-icon">
+                <label class="people-label children-label" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-btn" type="button" aria-labelledby="tooltip-label-children">
+                    <span class="visually-hidden">Дополнительная информация</span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-children">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+              </span>
+              <button class="form-people__btn decrease-btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                  <path d="M3 9v2h14V9H3Z"/>
+                </svg>
+                <span class="visually-hidden">Уменьшить количество</span>
+              </button>
+              <input class="people-input" type="number" id="children" name="children" value="2">
+              <button class="form-people__btn increase-btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                  <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                </svg>
+                <span class="visually-hidden">Увеличить количество</span>
+              </button>
+            </div>
+            <button class="modal__submit-btn" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
