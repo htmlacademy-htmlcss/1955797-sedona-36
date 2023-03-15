@@ -1306,7 +1306,9 @@ body {
 
 .range-bar {
   position: absolute;
+  width: 227px;
   height: 4px;
+  left: 0;
   background-color: #ffffff;
 }
 
